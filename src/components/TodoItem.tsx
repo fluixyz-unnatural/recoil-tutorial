@@ -1,7 +1,7 @@
 import { ChangeEventHandler } from "react";
 import { useRecoilState } from "recoil";
 import { Item } from "../types/todo";
-import { todoListState } from "../atom/todo";
+import { todoListState } from "../recoil/todo";
 
 export const TodoItem = ({ item }: { item: Item }) => {
   const [todoList, setTodoList] = useRecoilState(todoListState);
